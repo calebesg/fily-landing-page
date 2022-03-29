@@ -1,0 +1,72 @@
+@use 'variables'
+
+.header
+  width: 100%
+  background: url('../images/bg-curvy-mobile.svg') no-repeat variables.$email-sign
+  background-position: bottom
+  background-size: 100%
+  padding-bottom: 100px
+
+  &-navbar
+    display: flex
+    justify-content: space-between
+    padding: 1.5rem 1.25rem
+
+    &-brand
+      img
+        width: 82px
+
+    &-menu
+      &-options
+        display: flex
+        align-items: center
+        gap: 1.5rem
+        
+        li a
+          opacity: .8
+          transition: all .3s
+
+          &:hover
+            opacity: 1
+            text-decoration: underline
+
+  &-banner
+    position: relative
+    width: 78%
+    margin: 0 auto
+    text-align: center
+    font-family: 'Raleway', sans-serif
+    color: variables.$white
+
+    img
+      width: 100%
+
+    &-content
+      position: absolute
+      margin-top: 46px
+      
+      &-title
+        font-size: 1.5rem
+
+      &-description
+        margin-top: 24px
+        line-height: 1.25rem
+        opacity: .8
+
+      button
+        margin-top: 32px
+        width: 240px
+        height: 3rem
+        border-radius: 1.5rem
+        border: none
+        color: variables.$white
+        background-color: variables.$blue
+        font-size: 1rem
+        cursor: pointer
+        transition: background .3s
+
+        &:hover 
+          background-color: variables.$cyan
+
+
+        

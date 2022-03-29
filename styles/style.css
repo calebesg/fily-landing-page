@@ -8,8 +8,14 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #181f2a;
+  background: #181F2B;
   font-size: 14px;
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
 }
 
 ul {
@@ -19,6 +25,73 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+.header {
+  width: 100%;
+  background: url("../images/bg-curvy-mobile.svg") no-repeat #1c2431;
+  background-position: bottom;
+  background-size: 100%;
+  padding-bottom: 100px;
+}
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+}
+.header-navbar-brand img {
+  width: 82px;
+}
+.header-navbar-menu-options {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header-navbar-menu-options li a {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.header-navbar-menu-options li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.header-banner {
+  position: relative;
+  width: 78%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.header-banner img {
+  width: 100%;
+}
+.header-banner-content {
+  position: absolute;
+  margin-top: 46px;
+}
+.header-banner-content-title {
+  font-size: 1.5rem;
+}
+.header-banner-content-description {
+  margin-top: 24px;
+  line-height: 1.25rem;
+  opacity: 0.8;
+}
+.header-banner-content button {
+  margin-top: 32px;
+  width: 240px;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  color: white;
+  background-color: #339ecc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.header-banner-content button:hover {
+  background-color: #65e2d9;
 }
 
 /*# sourceMappingURL=style.css.map */
