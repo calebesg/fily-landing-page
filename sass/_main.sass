@@ -61,6 +61,7 @@
         border-bottom: 1px solid variables.$white
 
   &-testimonials
+    padding: 0 1rem
     margin-top: 7.5rem
     display: flex
     flex-direction: column
@@ -114,3 +115,47 @@
           .office
             opacity: .8
             margin-top: 0.25rem
+
+  &-signup
+    margin-top: 2.5rem
+    padding: 2.5rem 1.875rem
+    background-color: variables.$email-sign
+    color: variables.$white
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 0.5rem
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2)
+    transform: translateY(80px)
+
+    .sub-title
+      font-size: 1.125rem
+
+    .description
+      margin-top: 1rem
+      text-align: center
+      opacity: .8
+      line-height: 1.5rem
+      font-size: 0.75rem
+
+    #email
+      width: 100%
+      height: 3rem
+      border: none
+      border-radius: 1.5rem
+      margin-top: 1.5rem
+      padding: 0 2rem
+
+    button
+      width: 100%
+      height: 3rem
+      border: none
+      border-radius: 1.5rem
+      margin-top: 1rem
+      color: variables.$white
+      background-color: variables.$blue
+      cursor: pointer
+      transition: background-color .3s
+
+      &:hover
+        background-color: variables.$cyan
