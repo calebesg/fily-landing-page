@@ -2,7 +2,7 @@
 
 .main
   width: 100%
-  padding: 0 30px
+  padding: 0 1.875rem
   margin: 0 auto
 
   &-features
@@ -59,3 +59,58 @@
       &:hover 
         color: variables.$white
         border-bottom: 1px solid variables.$white
+
+  &-testimonials
+    margin-top: 7.5rem
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+    li
+      position: relative
+
+    li:first-of-type::before
+      content: ''
+      position: absolute
+      z-index: 10
+      top: 0
+      width: 1.5rem
+      height: 1.5rem
+      transform: translate(0.625rem, -1.3rem)
+      background: url('../images/bg-quotes.png') no-repeat
+      background-size: contain
+
+    .card
+      position: relative
+      z-index: 20
+      color: variables.$white
+      border-radius: 0.5rem
+      padding: 44px 2rem 2rem
+      background-color: variables.$bg-testimonial
+
+      .description
+        opacity: .8
+        line-height: 1.5rem
+        font-size: 0.75rem
+
+
+      figure
+        margin-top: 1rem
+        display: flex
+        align-items: center
+        gap:0.5rem
+
+        .avatar
+          width: 1.875rem
+          height: 1.875rem
+          border: 2px solid variables.$bg-footer
+          border-radius: 50%
+
+        figcaption
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+
+          .office
+            opacity: .8
+            margin-top: 0.25rem

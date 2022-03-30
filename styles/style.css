@@ -96,7 +96,7 @@ a {
 
 .main {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 1.875rem;
   margin: 0 auto;
 }
 .main-features {
@@ -153,6 +153,60 @@ a {
 .main-about .btn-works:hover {
   color: white;
   border-bottom: 1px solid white;
+}
+.main-testimonials {
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-testimonials li {
+  position: relative;
+}
+.main-testimonials li:first-of-type::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(0.625rem, -1.3rem);
+  background: url("../images/bg-quotes.png") no-repeat;
+  background-size: contain;
+}
+.main-testimonials .card {
+  position: relative;
+  z-index: 20;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 44px 2rem 2rem;
+  background-color: #202a3c;
+}
+.main-testimonials .card .description {
+  opacity: 0.8;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
+.main-testimonials .card figure {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-testimonials .card figure .avatar {
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 2px solid #0b1523;
+  border-radius: 50%;
+}
+.main-testimonials .card figure figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-testimonials .card figure figcaption .office {
+  opacity: 0.8;
+  margin-top: 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
