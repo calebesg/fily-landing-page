@@ -95,29 +95,64 @@ a {
 }
 
 .main {
-  width: 80%;
+  width: 100%;
+  padding: 0 30px;
   margin: 0 auto;
 }
 .main-features {
-  margin-top: 350px;
+  margin-top: 21.875rem;
 }
 .main-features-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 86px;
+  margin-bottom: 5.375rem;
   color: white;
 }
 .main-features-item .sub-title {
-  margin-top: 36px;
+  margin-top: 2.25rem;
   font-size: 1.25rem;
 }
 .main-features-item .description {
-  margin-top: 12px;
+  margin-top: 0.75rem;
   line-height: 1.25rem;
-  max-width: 300px;
+  max-width: 18.75rem;
   opacity: 0.8;
+}
+.main-about {
+  margin: 0 auto;
+  margin-top: 6.25rem;
+}
+.main-about img {
+  width: 100%;
+}
+.main-about .sub-title {
+  color: white;
+  margin-top: 3rem;
+  font-size: 1.125rem;
+}
+.main-about .description {
+  margin-top: 1rem;
+  color: white;
+  opacity: 0.8;
+}
+.main-about .description p {
+  margin-bottom: 1rem;
+}
+.main-about .btn-works {
+  color: #65e2d9;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  border-bottom: 1px solid #65e2d9;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+.main-about .btn-works:hover {
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
