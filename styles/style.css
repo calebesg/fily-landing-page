@@ -62,7 +62,7 @@ a {
 }
 @media (min-width: 50rem) {
   .header-navbar-brand img {
-    width: 11rem;
+    width: 8.75rem;
   }
 }
 .header-navbar-menu-options {
@@ -73,7 +73,7 @@ a {
 }
 @media (min-width: 50rem) {
   .header-navbar-menu-options {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     gap: 2rem;
   }
 }
@@ -427,17 +427,16 @@ a {
 
 .footer {
   background-color: #0b1523;
-  padding: 0 1.875rem 3.75rem;
-}
-.footer .logo {
-  margin-top: 15rem;
-  margin-left: 0.625rem;
-  width: 8.75rem;
+  padding: 15rem 1.875rem 3.75rem;
 }
 @media (min-width: 50rem) {
-  .footer .logo {
-    margin-left: 5rem;
+  .footer .image-wrap {
+    max-width: 76.625rem;
+    margin: 0 auto;
   }
+}
+.footer .image-wrap .logo {
+  width: 8.75rem;
 }
 @media (min-width: 50rem) {
   .footer-content {
