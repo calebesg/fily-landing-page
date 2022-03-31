@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 .footer
   background-color: variables.$bg-footer
@@ -9,8 +10,25 @@
     margin-left: 0.625rem
     width: 8.75rem
 
+    @include mixins.desktop
+      margin-left: 5rem
+
+  
+  &-content
+    @include mixins.desktop
+      max-width: 76.625rem
+      margin: 0 auto
+      display: grid
+      grid-template-areas: 'a a a b c'
+
   &-place
     margin-top: 1.875rem
+    grid-area: a
+
+    @include mixins.desktop
+      display: flex
+      align-items: flex-start
+      gap: 4rem
 
     .item
       display: flex
@@ -18,6 +36,9 @@
       color: variables.$white
       margin-bottom: 1.25rem
       max-width: 16.25rem
+
+      @include mixins.desktop
+        max-width: 368px
 
       img
         height: 1.25rem
@@ -27,8 +48,16 @@
 
   &-navegation
     margin-top: 4rem
+    grid-area: b
+
+    @include mixins.desktop
+      margin-top: 0.625rem
+      display: flex
+      gap: 4rem
 
     .menu
+      margin-bottom: 2rem
+
       li
         margin: 1rem 0
 
@@ -36,10 +65,15 @@
         margin-top: 2.5rem
   
   &-social
+    grid-area: c
     margin-top: 4rem
     display: flex
     justify-content: center
     gap: 1rem
+
+    @include mixins.desktop
+      margin-top: 1.875rem
+
 
     li
       border: 1px solid variables.$white
