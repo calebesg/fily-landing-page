@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 .main
   width: 100%
@@ -8,6 +9,14 @@
   &-features
     margin-top: 21.875rem
 
+    @include mixins.desktop
+      max-width: 55rem
+      margin: 0 auto
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      gap: 6rem 1rem
+
     &-item
       display: flex
       flex-direction: column
@@ -15,6 +24,9 @@
       text-align: center
       margin-bottom: 5.375rem
       color: variables.$white
+
+      @include mixins.desktop
+        margin: 0
 
       .sub-title
         margin-top: 2.25rem
