@@ -1,26 +1,46 @@
 @use 'variables'
+@use 'mixins'
 
 .header
   width: 100%
   background: url('../images/bg-curvy-mobile.svg') no-repeat variables.$email-sign
   background-position: bottom
   background-size: 100%
-  padding-bottom: 100px
+  padding-bottom: 6.25rem
+
+  @include mixins.desktop
+    background: url('../images/bg-curvy-desktop.svg') no-repeat variables.$email-sign
+    background-position: bottom
+    background-size: 100%
+    padding-bottom: 10.625rem
+
 
   &-navbar
     display: flex
     justify-content: space-between
     padding: 1.5rem 1.25rem
 
+    @include mixins.desktop
+      padding: 4.75rem
+
     &-brand
       img
-        width: 82px
+        width: 5.125rem
+
+        @include mixins.desktop
+          width: 11rem
 
     &-menu
       &-options
         display: flex
         align-items: center
+        height: 100%
         gap: 1.5rem
+
+        @include mixins.desktop
+          font-size: 1.25rem
+          gap: 2rem
+        
         
         li a
           opacity: .8
@@ -38,25 +58,46 @@
     font-family: 'Raleway', sans-serif
     color: variables.$white
 
+    @include mixins.desktop
+      max-width: 45.25rem
+
     img
       margin-top: 2rem
       width: 100%
 
     &-content
       position: absolute
-      margin-top: 46px
+      margin-top: 2.875rem
+
+      @include mixins.desktop
+        position: static
+        display: flex
+        flex-direction: column
+        align-items: center
       
       &-title
         font-size: 1.5rem
 
+        @include mixins.desktop
+          font-size: 2.5rem
+          line-height: 3.5rem
+          margin-top: 3rem
+
       &-description
-        margin-top: 24px
+        margin-top: 1.5rem
         line-height: 1.25rem
         opacity: .8
+        
+        @include mixins.desktop
+          margin: 0
+          margin-top: 2.875rem        
+          font-size: 1.25rem
+          line-height: 2.25rem
+          max-width: 36.25rem
 
       button
-        margin-top: 32px
-        width: 240px
+        margin-top: 2rem
+        width: 15rem
         height: 3rem
         border-radius: 1.5rem
         border: none
@@ -65,6 +106,11 @@
         font-size: 1rem
         cursor: pointer
         transition: background .3s
+
+        @include mixins.desktop
+          width: 17.5rem
+          height: 3.5rem
+          border-radius: 1.75rem
 
         &:hover 
           background-color: variables.$cyan

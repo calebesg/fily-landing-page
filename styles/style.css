@@ -32,20 +32,45 @@ a {
   background: url("../images/bg-curvy-mobile.svg") no-repeat #1c2431;
   background-position: bottom;
   background-size: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
+}
+@media (min-width: 50rem) {
+  .header {
+    background: url("../images/bg-curvy-desktop.svg") no-repeat #1c2431;
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 10.625rem;
+  }
 }
 .header-navbar {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.25rem;
 }
+@media (min-width: 50rem) {
+  .header-navbar {
+    padding: 4.75rem;
+  }
+}
 .header-navbar-brand img {
-  width: 82px;
+  width: 5.125rem;
+}
+@media (min-width: 50rem) {
+  .header-navbar-brand img {
+    width: 11rem;
+  }
 }
 .header-navbar-menu-options {
   display: flex;
   align-items: center;
+  height: 100%;
   gap: 1.5rem;
+}
+@media (min-width: 50rem) {
+  .header-navbar-menu-options {
+    font-size: 1.25rem;
+    gap: 2rem;
+  }
 }
 .header-navbar-menu-options li a {
   opacity: 0.8;
@@ -63,25 +88,54 @@ a {
   font-family: "Raleway", sans-serif;
   color: white;
 }
+@media (min-width: 50rem) {
+  .header-banner {
+    max-width: 45.25rem;
+  }
+}
 .header-banner img {
   margin-top: 2rem;
   width: 100%;
 }
 .header-banner-content {
   position: absolute;
-  margin-top: 46px;
+  margin-top: 2.875rem;
+}
+@media (min-width: 50rem) {
+  .header-banner-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header-banner-content-title {
   font-size: 1.5rem;
 }
+@media (min-width: 50rem) {
+  .header-banner-content-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+  }
+}
 .header-banner-content-description {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   line-height: 1.25rem;
   opacity: 0.8;
 }
+@media (min-width: 50rem) {
+  .header-banner-content-description {
+    margin: 0;
+    margin-top: 2.875rem;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 36.25rem;
+  }
+}
 .header-banner-content button {
-  margin-top: 32px;
-  width: 240px;
+  margin-top: 2rem;
+  width: 15rem;
   height: 3rem;
   border-radius: 1.5rem;
   border: none;
@@ -90,6 +144,13 @@ a {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
+}
+@media (min-width: 50rem) {
+  .header-banner-content button {
+    width: 17.5rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+  }
 }
 .header-banner-content button:hover {
   background-color: #65e2d9;
