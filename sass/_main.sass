@@ -97,7 +97,16 @@
     margin-top: 7.5rem
     display: flex
     flex-direction: column
+    align-items: center
     gap: 2rem
+
+    @include mixins.desktop
+      max-width: 76.625rem
+      padding: 0
+      margin: 10.625rem auto 0
+      flex-direction: row
+      justify-content: space-evenly
+
 
     li
       position: relative
@@ -113,12 +122,18 @@
       background: url('../images/bg-quotes.png') no-repeat
       background-size: contain
 
+      @include mixins.desktop
+        width: 3.5rem
+        height: 2.8125    
+        transform: translate(-0.625rem, -2.5rem)
+
     .card
       position: relative
+      max-width: 22.5rem
       z-index: 20
       color: variables.$white
       border-radius: 0.5rem
-      padding: 44px 2rem 2rem
+      padding: 2.75rem 2rem 2rem
       background-color: variables.$bg-testimonial
 
       .description

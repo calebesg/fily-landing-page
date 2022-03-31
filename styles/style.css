@@ -265,7 +265,17 @@ a {
   margin-top: 7.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+@media (min-width: 50rem) {
+  .main-testimonials {
+    max-width: 76.625rem;
+    padding: 0;
+    margin: 10.625rem auto 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 .main-testimonials li {
   position: relative;
@@ -281,12 +291,20 @@ a {
   background: url("../images/bg-quotes.png") no-repeat;
   background-size: contain;
 }
+@media (min-width: 50rem) {
+  .main-testimonials li:first-of-type::before {
+    width: 3.5rem;
+    height: 2.8125;
+    transform: translate(-0.625rem, -2.5rem);
+  }
+}
 .main-testimonials .card {
   position: relative;
+  max-width: 22.5rem;
   z-index: 20;
   color: white;
   border-radius: 0.5rem;
-  padding: 44px 2rem 2rem;
+  padding: 2.75rem 2rem 2rem;
   background-color: #202a3c;
 }
 .main-testimonials .card .description {
