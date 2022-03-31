@@ -42,35 +42,55 @@
     margin: 0 auto
     margin-top: 6.25rem
 
+    @include mixins.desktop
+      display: flex
+      align-items: center
+      max-width: 76.625rem
+
     img
       width: 100%
 
-    .sub-title
-      color: variables.$white
-      margin-top: 3rem
-      font-size: 1.125rem
+      @include mixins.desktop
+        flex: 1
+    
+    .content-wrapper
+      @include mixins.desktop
+        flex: 1
+        padding-left: 3.75rem
 
-    .description
-      margin-top: 1rem
-      color: variables.$white
-      opacity: .8
-      
-      p
-        margin-bottom: 1rem
-
-    .btn-works
-      color: variables.$cyan
-      display: flex
-      align-items: center
-      gap: 0.5rem
-      width: fit-content
-      border-bottom: 1px solid variables.$cyan
-      padding-bottom: 0.5rem
-      transition: all .3s
-
-      &:hover 
+      .sub-title
         color: variables.$white
-        border-bottom: 1px solid variables.$white
+        margin-top: 3rem
+        font-size: 1.125rem
+
+        @include mixins.desktop
+          font-size: 2rem
+          max-width: 18.75rem
+
+      .description
+        margin-top: 1rem
+        color: variables.$white
+        opacity: .8
+
+        @include mixins.desktop
+          font-size: 1rem
+        
+        p
+          margin-bottom: 1rem
+
+      .btn-works
+        color: variables.$cyan
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        width: fit-content
+        border-bottom: 1px solid variables.$cyan
+        padding-bottom: 0.5rem
+        transition: all .3s
+
+        &:hover 
+          color: variables.$white
+          border-bottom: 1px solid variables.$white
 
   &-testimonials
     padding: 0 1rem

@@ -201,23 +201,52 @@ a {
   margin: 0 auto;
   margin-top: 6.25rem;
 }
+@media (min-width: 50rem) {
+  .main-about {
+    display: flex;
+    align-items: center;
+    max-width: 76.625rem;
+  }
+}
 .main-about img {
   width: 100%;
 }
-.main-about .sub-title {
+@media (min-width: 50rem) {
+  .main-about img {
+    flex: 1;
+  }
+}
+@media (min-width: 50rem) {
+  .main-about .content-wrapper {
+    flex: 1;
+    padding-left: 3.75rem;
+  }
+}
+.main-about .content-wrapper .sub-title {
   color: white;
   margin-top: 3rem;
   font-size: 1.125rem;
 }
-.main-about .description {
+@media (min-width: 50rem) {
+  .main-about .content-wrapper .sub-title {
+    font-size: 2rem;
+    max-width: 18.75rem;
+  }
+}
+.main-about .content-wrapper .description {
   margin-top: 1rem;
   color: white;
   opacity: 0.8;
 }
-.main-about .description p {
+@media (min-width: 50rem) {
+  .main-about .content-wrapper .description {
+    font-size: 1rem;
+  }
+}
+.main-about .content-wrapper .description p {
   margin-bottom: 1rem;
 }
-.main-about .btn-works {
+.main-about .content-wrapper .btn-works {
   color: #65e2d9;
   display: flex;
   align-items: center;
@@ -227,7 +256,7 @@ a {
   padding-bottom: 0.5rem;
   transition: all 0.3s;
 }
-.main-about .btn-works:hover {
+.main-about .content-wrapper .btn-works:hover {
   color: white;
   border-bottom: 1px solid white;
 }
