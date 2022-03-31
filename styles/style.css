@@ -210,7 +210,7 @@ a {
   margin-top: 0.25rem;
 }
 .main-signup {
-  margin-top: 2.5rem;
+  margin-top: -15%;
   padding: 2.5rem 1.875rem;
   background-color: #1c2431;
   color: white;
@@ -219,7 +219,7 @@ a {
   align-items: center;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-  transform: translateY(80px);
+  transform: translateY(50%);
 }
 .main-signup .sub-title {
   font-size: 1.125rem;
@@ -256,9 +256,62 @@ a {
 
 .footer {
   background-color: #0b1523;
+  padding: 0 1.875rem 3.75rem;
 }
 .footer .logo {
-  margin-top: 120px;
+  margin-top: 15rem;
+  margin-left: 0.625rem;
+  width: 8.75rem;
+}
+.footer-place {
+  margin-top: 1.875rem;
+}
+.footer-place .item {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+  margin-bottom: 1.25rem;
+  max-width: 16.25rem;
+}
+.footer-place .item img {
+  height: 1.25rem;
+}
+.footer-navegation {
+  margin-top: 4rem;
+}
+.footer-navegation .menu li {
+  margin: 1rem 0;
+}
+.footer-navegation .menu li:nth-of-type(5) {
+  margin-top: 2.5rem;
+}
+.footer-social {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-social li {
+  border: 1px solid white;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  transition: all 0.3s;
+}
+.footer-social li a {
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+.footer-social li:hover {
+  border: 1px solid #65e2d9;
+}
+.footer-social li:hover a {
+  color: #65e2d9;
 }
 
 /*# sourceMappingURL=style.css.map */
