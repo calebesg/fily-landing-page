@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
 button {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -294,7 +299,7 @@ a {
 @media (min-width: 50rem) {
   .main-testimonials li:first-of-type::before {
     width: 3.5rem;
-    height: 2.8125;
+    height: 2.8125rem;
     transform: translate(-0.625rem, -2.5rem);
   }
 }
@@ -345,8 +350,22 @@ a {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   transform: translateY(50%);
 }
+@media (min-width: 50rem) {
+  .main-signup {
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    max-width: 54rem;
+    padding: 3.125rem 4.6875rem;
+    transform: translateY(6.875rem);
+  }
+}
 .main-signup .sub-title {
   font-size: 1.125rem;
+}
+@media (min-width: 50rem) {
+  .main-signup .sub-title {
+    font-size: 1.75rem;
+  }
 }
 .main-signup .description {
   margin-top: 1rem;
@@ -355,7 +374,24 @@ a {
   line-height: 1.5rem;
   font-size: 0.75rem;
 }
-.main-signup #email {
+@media (min-width: 50rem) {
+  .main-signup .description {
+    padding: 0 2.875rem;
+    font-size: 0.875rem;
+  }
+}
+.main-signup .form {
+  width: 100%;
+}
+@media (min-width: 50rem) {
+  .main-signup .form {
+    display: flex;
+    align-items: center;
+    margin-top: 2.375rem;
+    gap: 2rem;
+  }
+}
+.main-signup .form #email {
   width: 100%;
   height: 3rem;
   border: none;
@@ -363,7 +399,12 @@ a {
   margin-top: 1.5rem;
   padding: 0 2rem;
 }
-.main-signup button {
+@media (min-width: 50rem) {
+  .main-signup .form #email {
+    margin-top: 0;
+  }
+}
+.main-signup .form button {
   width: 100%;
   height: 3rem;
   border: none;
@@ -374,8 +415,14 @@ a {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.main-signup button:hover {
+.main-signup .form button:hover {
   background-color: #65e2d9;
+}
+@media (min-width: 50rem) {
+  .main-signup .form button {
+    margin-top: 0;
+    width: 17.5rem;
+  }
 }
 
 .footer {
