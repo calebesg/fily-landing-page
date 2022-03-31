@@ -64,6 +64,7 @@ a {
   color: white;
 }
 .header-banner img {
+  margin-top: 2rem;
   width: 100%;
 }
 .header-banner-content {
@@ -275,6 +276,9 @@ a {
 }
 .footer-place .item img {
   height: 1.25rem;
+}
+.footer-place .item img.image-sm {
+  height: 1rem;
 }
 .footer-navegation {
   margin-top: 4rem;
