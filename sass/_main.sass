@@ -201,12 +201,23 @@
 
     .form
       width: 100%
+      position: relative
     
       @include mixins.desktop
         display: flex
         align-items: center
         margin-top: 2.375rem
         gap: 2rem
+
+      .message
+        font-size: 0.75rem
+        color: variables.$light-red
+        position: absolute
+        left: 1rem
+        top: 5px
+
+      .hidden
+        display: none
 
       #email
         width: 100%

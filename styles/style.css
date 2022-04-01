@@ -382,6 +382,7 @@ a {
 }
 .main-signup .form {
   width: 100%;
+  position: relative;
 }
 @media (min-width: 50rem) {
   .main-signup .form {
@@ -390,6 +391,16 @@ a {
     margin-top: 2.375rem;
     gap: 2rem;
   }
+}
+.main-signup .form .message {
+  font-size: 0.75rem;
+  color: #ff4242;
+  position: absolute;
+  left: 1rem;
+  top: 5px;
+}
+.main-signup .form .hidden {
+  display: none;
 }
 .main-signup .form #email {
   width: 100%;
